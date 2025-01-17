@@ -1,0 +1,22 @@
+﻿<Window x:Class="Labels.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Labels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="450">
+    <StackPanel>
+        <Label Margin="16,16,16,0"></Label>
+            <Label>
+                <StackPanel Orientation="Horizontal">
+                <Image Width ="40" Source="https://www.figma.com/community/resource/1c021db9-fcc8-4cb6-900d-952b80e7bff0/thumbnail" Height="37"/>
+                    <AccessText FontSize="30" Text=" Message"/>
+                </StackPanel>
+            </Label>
+        <TextBox 
+            Margin="16"
+            FontSize="16">
+        </TextBox>
+    </StackPanel>
+</Window>
