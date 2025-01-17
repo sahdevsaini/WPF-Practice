@@ -1,0 +1,30 @@
+﻿<Window x:Class="Testblocks_in_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Testblocks_in_WPF"
+        mc:Ignorable="d"
+        Title="TextBlocks in WPF" Height="300" Width="450">
+    <StackPanel>
+        <TextBlock x:Name ="MyTestblock" >This is <Bold>Sahdev Saini</Bold> 
+        <LineBreak/>
+         <Bold>Conatact ME</Bold>
+        <LineBreak/>
+           <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.linkedin.com/in/sahdev-saini-m-e-b-tech-139285187/">Linklined</Hyperlink>
+            <LineBreak/>
+            <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://github.com/sahdevsaini">Github</Hyperlink>
+             <LineBreak/>
+            <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.kaggle.com/sahdevsaini">Kaggle</Hyperlink>
+             <LineBreak/>
+            <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.hackerrank.com/profile/sahdevsaini0104">Hacker Rank</Hyperlink>
+        </TextBlock>
+        <Line/>
+        <TextBlock TextWrapping="Wrap" Foreground="SeaGreen">
+            <LineBreak/>
+            Software Engineer @ MTSL ||Ex- Software Engineer Intern at ITILITE || 
+            <Span Foreground="Black">Master of Engineering</Span>
+            in CSE From TIET
+        </TextBlock>
+    </StackPanel>
+</Window>
