@@ -1,0 +1,40 @@
+﻿<Window x:Class="Radio_Buttons.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Radio_Buttons"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label FontSize="20" Foreground="BlueViolet">Who Will be the Next Prime Minister of India</Label>
+        <RadioButton x:Name="rbmodi" Checked="Rbmodi_Checked" Unchecked="Rbmodi_Unchecked" GroupName="PrimeMinister" FontSize="20" IsChecked="True">
+            <WrapPanel>
+                <Image Height="20" Source="https://www.thestatesman.com/wp-content/uploads/2022/09/03_Merged.jpg"/>
+                <Label x:Name="lbmodi">Narendra Modi</Label>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton GroupName="PrimeMinister" FontSize="20">
+            <WrapPanel>
+                <Image Height="20" Source="https://i.pinimg.com/736x/dd/7e/7f/dd7e7f211cb2f8bdc0a0cbaf662aa4ad.jpg"/>
+                <Label>Yogi Adityanath</Label>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton GroupName="PrimeMinister" FontSize="20">
+            <WrapPanel>
+                <Image Height="20" Source="https://www.dailypioneer.com/uploads/2024/story/images/big/choice-between--those-who-opened-fire-at-karsevaks-and-those-who-built-ram-temple---says-amit-shah-2024-04-28.jpg"/>
+                <Label>Amit Shah</Label>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton GroupName="PrimeMinister" FontSize="20">
+            <WrapPanel>
+                <Image Height="20" Source="https://indianexpress.com/wp-content/uploads/2023/10/Nitin_Gadkari_addressing_at_the_inauguration_of_the_29th_National_Road_Safety_Week_2018__in_New_Delhi-removebg-preview.png"/>
+                <Label>Nitin Gadkari</Label>
+            </WrapPanel>
+        </RadioButton>
+        <Label FontSize="20" Foreground="BlueViolet">How do you rate?</Label>
+        <RadioButton GroupName="Rating" FontSize="20">Good</RadioButton>
+        <RadioButton GroupName="Rating" FontSize="20">Not Good</RadioButton>
+        <RadioButton GroupName="Rating" FontSize="20">Okay</RadioButton>
+    </StackPanel>
+</Window>
