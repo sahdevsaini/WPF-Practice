@@ -1,0 +1,18 @@
+﻿<Window x:Class="Images.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Images"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <!--
+        <Image Height="300" Source="https://igimage.indiaglitz.com/telugu/gallery/actor/rahulvijay/poster.jpg"/>--> 
+        
+        <Image x:Name="myImage" Height="300" 
+               MouseUp="Image_MouseUp"
+               Source="D:\Sahdev Saini\The Windows Presentation Foundation WPF Guide for beginners\Section 2 Controls\19. Images\Images\Images\sahdev.jfif"></Image>
+
+    </StackPanel>
+</Window>
